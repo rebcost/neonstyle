@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Neon Style</title>
+</head>
+<body>
+    <h1 id="btn">FECHADO</h1>
+    <script>
+        var btn = document.getElementById("btn");
+
+        btn.onclick = function(){
+            if(btn.classList.contains("neon")){
+                btn.classList.remove("neon");
+                btn.innerHTML = "FECHADO";
+            }else{
+                btn.classList.add("neon");
+                btn.innerHTML = "ABERTO";
+            }
+            
+        }
+    </script>
+</body>
+</html>
